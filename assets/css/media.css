@@ -1,4 +1,6 @@
-@media (max-width: 835px) {
+/* tablet */
+
+@media (min-width: 450px) and (max-width: 835px) {
 
 
     .menu {
@@ -75,7 +77,7 @@
     .our-team {
         max-width: 748px !important;
     }
- 
+
 
     .cards {
         max-width: 550px;
@@ -135,7 +137,7 @@
         width: 534px !important;
         display: flex;
         flex-direction: row;
-    
+
     }
 
     .footer {
@@ -163,8 +165,241 @@
         }
     }
 
-    .unique{
+    .unique {
         display: none;
 
     }
+}
+
+
+/* smartphone */
+
+@media (min-width: 320px) and (max-width: 450px) {
+
+    .menu {
+        display: block !important;
+        width: 35px;
+        margin-right: 30px;
+    }
+
+    .img {
+        margin-left: 30px;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 60vw;
+        height: calc(600px - 100px);
+        top: 100px;
+        right: 0;
+
+        & .ulHeader {
+            flex-direction: column;
+
+            & li {
+                height: 30px;
+
+                & .hlink {
+                    font-weight: 900;
+                    font-size: 14px !important;
+                    margin-left: 30px;
+                    border-bottom: transparent !important;
+                }
+
+                & .hlink:hover {
+                    border-bottom: transparent;
+                    color: var(--gold) !important;
+                }
+            }
+        }
+    }
+
+    .banner {
+        height: 500px !important;
+
+        & h1 {
+            font-size: 40px !important;
+        }
+    }
+
+    .body {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 450px;
+
+        & .about {
+            margin: 10px 60px 30px 60px;
+        }
+
+        & .imgB {
+            margin-top: 20px;
+            width: auto;
+        }
+    }
+
+
+    .services {
+        flex-wrap: wrap;
+
+        & .service {
+            min-width: 100%;
+        }
+    }
+
+    .projects-list {
+        margin: 20px;
+        padding: 0 !important;
+        border-radius: 10px !important;
+
+        & li {
+            border-left: none !important;
+            border-bottom: none !important;
+
+            & .link {
+                padding: 20px !important;
+            }
+
+            & .link:hover {
+                color: var(--gold) !important;
+            }
+        }
+
+
+    }
+
+    .our-team {
+        max-width: 384px !important;
+    }
+
+    .unique {
+        display: none;
+
+    }
+
+    .cards {
+        max-width: 480px;
+        height: 720px !important;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        & .card {
+            width: 234px !important;
+            height: 344px !important;
+        }
+    }
+
+    .containerp {
+        width: 834px;
+
+
+        & .premium-container {
+            height: 700px;
+            width: 394px;
+
+
+            & .premium-content {
+                height: 800px;
+                display: flex !important;
+                flex-direction: column !important;
+
+
+                & .livro {
+                    align-items: center;
+                    margin-left: 50px;
+                    width: 300px !important;
+                    height: 300px !important;
+                }
+
+                & p {
+                    font-size: 12px;
+                }
+
+                & .desc-text {
+                    margin-bottom: 0px !important;
+                }
+            }
+        }
+    }
+
+    .section-some {
+        flex-wrap: wrap;
+        padding-left: 40px;
+
+        & h1 {
+            font-size: 30px !important;
+        }
+
+        & h2 {
+            font-size: 18px;
+        }
+
+        & p {
+            font-size: 12px !important;
+        }
+    }
+
+    & .share {
+        width: 404px !important;
+        display: flex;
+        flex-direction: row;
+
+        & .redes-share {
+            gap: 6px !important;
+            margin-top: 15px !important;
+            margin-right: 5px;
+
+            & span {
+                display: none;
+            }
+        }
+
+    }
+    .section-contact {
+        width: 400px !important;
+    }
+
+    .informations {
+        background-color: var(--white);
+        width: 500px !important;
+        height: 300px !important; 
+    }
+
+  .section-footer {
+        display: flex;
+        height: 400px !important;
+
+        .footer {
+            display: flex;
+            flex-direction: column-reverse;
+
+
+            & .footer-text {
+                display: none;
+            }
+            & .footer-mail {
+                width: 300px !important;
+                height: 200px !important;
+
+                & .bar-mail {
+                    width: 160px !important;
+                }
+            }
+
+            & .footer-redes {
+                margin-top: 30px !important;
+                margin-bottom: 0 !important;
+
+                & .redes-team {
+                    margin-bottom: 35px !important
+                }
+            }
+        }
+    }
+
 }

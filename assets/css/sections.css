@@ -339,7 +339,8 @@
 
 .unique {
     background-color: var(--white);
-    border: 1px solid var(--corgray);
+    border-top: 1px solid var(--corgray);
+    border-bottom: 1px solid var(--corgray);
     height: 150px;
 
 
@@ -501,7 +502,6 @@
 
     & .some-service {
         text-align: center;
-        ;
 
         & h1 {
             color: var(--gold);
